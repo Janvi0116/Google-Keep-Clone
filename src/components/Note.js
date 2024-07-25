@@ -24,7 +24,6 @@ function Note({ note, updateNote, deleteNote }) {
   };
 
   const handleCardClick = (e) => {
-    // Prevent opening modal when clicking on edit or delete buttons
     if (!e.target.closest('button')) {
       setIsModalOpen(true);
     }
